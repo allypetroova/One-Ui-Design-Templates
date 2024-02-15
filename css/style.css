@@ -14,10 +14,11 @@ a{
     color: #FAFAFA;
 }
 
-.сontact_btn{
-    display: inline-flex;
+.сontact__btn{
+    display: flex;
     column-gap: 8px;
     padding: 12px 24px;
+    margin-right: 12px;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
@@ -25,6 +26,16 @@ a{
     background-color: #3B82F6;
     color: #FAFAFA;
     border-radius: 16px;
+}
+
+.сontact__link {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .container{
@@ -55,7 +66,6 @@ a{
     justify-content: center;
     align-self: center;
     font-size: 14px;
-    font-weight: 400;
     line-height: 140%;
 }
 
@@ -68,7 +78,6 @@ a{
     display: flex;
     gap: 10px;
     font-size: 14px;
-    font-weight: 400;
     line-height: 20px;
 }
 
@@ -114,18 +123,7 @@ a{
 }
 
 .header__btn {
-    margin-right: 12px;
-}
-
-.header__link {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    
 }
 
 /*----------services----------*/
@@ -183,14 +181,88 @@ a{
 
 .services__list-text {
     font-size: 16px;
-    font-weight: 400;
 }
 
 .services__list-link {
     font-size: 14px;
-    font-weight: 400;
     line-height: 20px;
     background-image: url("../images/services__arrow.svg");
     background-repeat: no-repeat;
     background-position: right;
+}
+
+/*----------services----------*/
+
+.about {
+    padding-bottom: 120px;
+}
+.about__inner{
+    display: grid;
+    grid-template-columns: 616px 616px;
+    gap: 72px;
+    align-items: center;
+}
+.about__content {
+}
+.about__title {
+    margin-bottom: 24px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #FAFAFA;
+}
+.about__text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D4D4D4;
+}
+.about__buttons {
+    display: flex;
+    margin-bottom: 24px;
+}
+.сontact__btn {
+}
+.сontact__link {
+}
+.about__note{
+    margin-bottom: 24px;
+    padding-top: 24px;
+    font-size: 16px;
+    color: #D4D4D4;
+    border-top: 1px solid #525252;
+}
+.about__user {
+    display: flex;
+    gap: 12px;
+    max-width: 200px;
+    align-items: center;
+}
+
+.user__id{
+    position: relative;
+}
+
+.user__status{
+    position: absolute;
+    top: 49px;
+    left: 49px;
+}
+
+.user__desc{
+}
+
+.user__name {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 16px;
+    color: #E5E5E5;
+}
+
+.user__post {
+    font-size: 14px;
+    color: #A3A3A3;
+}
+
+.about__img {
 }
