@@ -89,6 +89,7 @@ a{
 
 .admission__btn {
     padding: 8px 16px;
+    color: #FAFAFA;
     background-color: #3B82F6;
     border-radius: 8px;
 }
@@ -153,45 +154,71 @@ a{
     line-height: 160%;
 }
 
-.services__box {
-}
-
 .services__list {
-    display: flex;
-    gap: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 48px   ;
 }
 
 .services__list-item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
-    padding: 48px;
+    padding: 136px 48px 48px;
+    width: 402px;
     text-align: center;
 }
 
 .services__icon-1 {
-    background-image: url("../images/services__icon-1.svg");
-    background-repeat: no-repeat;
-    background-position: top;
+    background: url("../images/services__icon-1.svg") no-repeat top 48px left 170px;
 }
+
+.services__icon-2 {
+    background: url("../images/services__icon-2.svg") no-repeat top 48px left 170px;
+}
+
+.services__icon-3 {
+    background: url("../images/services__icon-3.svg") no-repeat top 48px left 170px;
+}
+
+.services__icon-4 {
+    background: url("../images/services__icon-4.svg") no-repeat top 48px left 170px;
+}
+
+.services__icon-5 {
+    background: url("../images/services__icon-5.svg") no-repeat top 48px left 170px;
+}
+
+.services__icon-6 {
+    background: url("../images/services__icon-6.svg") no-repeat top 48px left 170px;
+}
+
 
 .services__list-title {
     font-size: 20px;
     font-weight: 600;
+    color: #E5E5E5;
 }
 
 .services__list-text {
     font-size: 16px;
 }
 
-.services__list-link {
+.services__list-link{
+    text-align: center;
+}
+
+.services__list-read {
     font-size: 14px;
     line-height: 20px;
     background-image: url("../images/services__arrow.svg");
     background-repeat: no-repeat;
     background-position: right;
+    padding-right: 16px;
 }
 
-/*----------services----------*/
+/*----------about----------*/
 
 .about {
     padding-bottom: 120px;
@@ -266,3 +293,42 @@ a{
 
 .about__img {
 }
+
+/*----------reach----------*/
+
+.reach {
+    padding: 120px 0;
+    background: url(../images/ellipse-1.png) no-repeat top 106px left 0,
+                url(../images/ellipse-2.png) no-repeat top 485px right -48px,
+                url(../images/ellipse-3.png) no-repeat top 172px right 0;
+    background-color: #171717;
+}
+
+.reach__content{
+    text-align: center;
+}
+
+.reach__title {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    max-width: 850px;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.reach__text {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 612px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.reach__btn{
+    display: flex;
+    justify-content: center;
+}
+
+/*----------footer----------*/
