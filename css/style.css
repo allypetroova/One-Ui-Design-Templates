@@ -1,9 +1,10 @@
 /*
 ===============
-Fonts
+Fonts and styles
 ===============
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import "links.css";
 /*
 ===============
 Variables
@@ -12,9 +13,14 @@ Variables
 :root{
     --text-color: #D4D4D4;
     --title-color: #FAFAFA;
-    --accent-color: #3B82F6;
 
-    --ui-light: #FAFAFA;
+    --ui-accent-color: #3B82F6;
+    --ui-accent-hover-color: #0B57DB;
+    --ui-muted-color: #171717;
+
+    --light-link-color: #FAFAFA;
+    --muted-link-color: #D4D4D4;
+
     --font-main: 'Poppins', sans-serif;
 }
 /*
@@ -22,26 +28,23 @@ Variables
 Global Styles
 ===============
 */
+.none{
+    display: none;
+}
 body{
     font-family: var(--font-main);
-    color: var(--text-color);
     background-color: #000000;
 }
-
 .header {
     padding: 21px 0 240px;
-}
-.header a{
-    color: var(--text-color);
 }
 .container {
     margin: 0 auto;
     max-width: 1304px;
     padding: 0 15px;
 }
-.container--header {
-}
 .nav {
+    margin-bottom: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,132 +56,42 @@ body{
 .nav__list {
     display: flex;
     gap: 52px;
-}
-.nav_list-item {
-}
-.nav__list-link {
-}
-.nav__list-item {
-}
-.nav__list-link--active {
-}
-.admission {
-    display: flex;
-    gap: 10px;
-}
-.admission__btn {
-}
-.admission__link {
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-.accent-btn{
-    background-color: var(--accent-color);
-    color: var(--ui-light);
-}
-.header__content {
-}
-.header__title {
-}
-.header__text {
-}
-.header__buttons {
-}
-.сontact__btn {
-}
-.сontact__link {
-}
-/*
-.сontact__btn{
-    display: flex;
-    column-gap: 8px;
-    padding: 12px 24px;
-    margin-right: 12px;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30px;
-    background-color: #3B82F6;
-    color: #FAFAFA;
-    border-radius: 16px;
-}
-.сontact__link {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 20px;
-    font-size: 16px;
-    line-height: 24px;
-}
-.header__nav {
-    padding: 21px 0 141px;              
-}
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav__logo {
-}
-.logo {
-}
-.nav__list {
-    display: flex;
-    gap: 36px;
-    justify-content: center;
-    align-self: center;
-    font-size: 14px;
     line-height: 140%;
 }
-.header__list-item {
+.nav__list-link {
+    color: var(--muted-link-color);
 }
-.header__list-link {
-}
-.admission {
+.nav__list-link--active {
     display: flex;
-    gap: 10px;
-    font-size: 14px;
-    line-height: 20px;
-}
-.admission__btn {
-    padding: 8px 16px;
-    background-color: transparent;
-    border-radius: 8px;
-}
-.admission__link {
-    padding: 8px 16px;
-    color: #FAFAFA;
-    background-color: #3B82F6;
-    border-radius: 8px;
+    gap: 8px;
+    align-items: center;
+
+    &::after{
+        content: url("../images/icons/arrow.svg");
+    }
 }
 .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 .header__title {
-    margin: 0 auto;
-    max-width: 960px;
     margin-bottom: 24px;
     font-size: 84px;
     font-weight: 600;
     line-height: 120%;
+    text-wrap: balance;
+    color: var(--title-color);
 }
-.header__text {
-    margin: 0 auto;
-    max-width: 611px;
+.text {
     margin-bottom: 48px;
+    max-width: 611px;
     font-size: 18px;
     font-weight: 300;
     line-height: 160%;
+    color: var(--text-color);
 }
-.header__buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 48px;
-}
-.header__btn {
-}*/
 
 /* Services */
 

@@ -1,0 +1,51 @@
+.admission {
+    line-height: 20px;
+}
+.admission__login {
+    padding: 8px 16px;
+    margin: 0 10px 0 0;
+}
+.admission__register {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* Header links */
+
+.header__links {
+    margin-bottom: 48px;
+    display: flex;
+    gap: 12px;
+}
+.header__link-start {
+    padding: 12px 24px;
+    display: flex;
+    gap: 8px;
+    border-radius: 16px;
+}
+.header__link-live {
+    padding: 12px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+/* Overall styles*/
+
+.accent-link{
+    background-color: var(--ui-accent-color);
+    color: var(--light-link-color);
+    transition: all 0.1s ease-in;
+
+    &:hover{
+        background-color: var(--ui-accent-hover-color);
+    }
+}
+.muted-link{
+    color: var(--muted-link-color);
+    border-radius: 8px;
+    transition: all 0.1s ease-in;
+
+    &:hover{
+        background-color: var(--ui-muted-color);
+    }
+}
