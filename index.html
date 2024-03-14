@@ -19,7 +19,7 @@
         </a>
 
         <ul class="nav__list">
-          <li class="nav_list-item">
+          <li class="nav__list-item">
             <a class="nav__list-link" href="#">Home</a>
           </li>
           <li class="nav__list-item">
@@ -29,8 +29,9 @@
             <a class="nav__list-link" href="#">Careers</a>
           </li>
           <li class="nav__list-item">
-            <a class="nav__list-link nav__list-link--active" href="#">Services</a>
-            <div class="nav-list__sub-nav none">
+            <a class="nav__list-link nav__list-link--dropdown" href="#">Services</a>
+
+            <div class="nav-list__sub-nav">
               <ul class="sub-nav">
                 <li class="sub-nav__item">
                   <a class="sub-nav__link" href="#web-design">Web Design</a>
@@ -43,6 +44,7 @@
                 </li>
               </ul>
             </div>
+
           </li>
           <li class="nav__list-item">
             <a class="nav__list-link" href="#">Contact</a>
@@ -61,7 +63,7 @@
           Use one library with any framework you have. Creative and Beautiful websites now made easy with One Ui Design Templates.
         </p>
         <div class="header__links">
-          <a class="header__link-start accent-link">
+          <a class="header__link-start accent-link" href="#">
             <img src="images/icons/start-btn.svg" alt="icon">
             Get Started Now
           </a>
@@ -228,63 +230,83 @@
     </section>
   </main>
 
-  <footer class="footer none">
-    <div class="container">
+  <footer class="footer">
+    <div class="container container--footer">
 
       <div class="footer__grid">
 
         <div class="footer__desc">
           <div class="footer__logo">
-            <a class="logo" href="#!">
-              <img src="images/logo.svg" alt="Logo">
+            <a class="logo" href="#">
+              <img src="images/logo-footer.svg" alt="Logo">
             </a>
           </div>
           <h3 class="footer__title">Lets take your business to next level with Better Advertising</h3>
         </div>
 
-        <div class="footer__nav footer__nav--platform">
+        <nav class="footer__nav">
           <h4 class="footer__nav-title">Platform</h4>
           <ul class="footer__list">
-            <li class="footer__list-item">Advertising</li>
-            <li class="footer__list-item">SEO & Social Media</li>
-            <li class="footer__list-item">Blog Post</li>
-            <li class="footer__list-item">Home</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Advertising</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">SEO &amp;&nbsp;Social Media</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Blog Post</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Home</a>
+            </li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer__nav">
+        <nav class="footer__nav">
           <h4 class="footer__nav-title">Company</h4>
           <ul class="footer__list">
-            <li class="footer__list-item">Affiliations</li>
-            <li class="footer__list-item">Careers</li>
-            <li class="footer__list-item">Tutorials</li>
-            <li class="footer__list-item">What’s New</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Affiliations</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Careers</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Tutorials</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">What&rsquo;s New</a>
+            </li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer__nav">
+        <nav class="footer__nav">
           <h4 class="footer__nav-title">Resources</h4>
           <ul class="footer__list">
-            <li class="footer__list-item">Terms of Service</li>
-            <li class="footer__list-item">Privacy Policy</li>
-            <li class="footer__list-item">Home</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Terms of Service</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Home</a>
+            </li>
           </ul>
-        </div>
-
+        </nav>
       </div>
 
       <div class="footer__row">
         <div class="footer__copyright">
-          <a class="" href="#!">@ 2023 One Agency. All rights reserved.</a>
+          <a href="#">@ 2023 One Agency. All rights reserved.</a>
         </div>
         <div class="footer__links">
-          <a href="#!">Terms of Service</a>
-          <a href="#!">Privacy Policy</a>
-          <a href="#!">Media</a>
-          <a href="#!">DCMA</a>
+          <a class="footer__link" href="#">Terms of Service</a>
+          <a class="footer__link" href="#">Privacy Policy</a>
+          <a class="footer__link" href="#">Media</a>
+          <a class="footer__link" href="#">DCMA</a>
         </div>
       </div>
-
     </div>
   </footer>
 
