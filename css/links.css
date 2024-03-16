@@ -1,13 +1,36 @@
-.admission {
-    line-height: 20px;
-}
+/*
+===============
+Links styles
+===============
+*/
 .admission__login {
-    padding: 8px 16px;
     margin: 0 10px 0 0;
+    padding: 8px 16px;
+    max-width: 69px;
+
+    line-height: 20px;
+    color: var(--muted-link-color);
+    background-color: transparent;
+    border-radius: 8px;
+
+    transition: all 0.1s ease-in;
+    &:hover{
+        background-color: var(--ui-muted-color);
+    }
 }
 .admission__register {
     padding: 8px 16px;
+    max-width: 123px;
+
+    line-height: 20px;
+    color: var(--light-link-color);
+    background-color: var(--ui-accent-color);
     border-radius: 8px;
+
+    transition: all 0.1s ease-in;
+    &:hover{
+        background-color: var(--ui-accent-hover-color);
+    }
 }
 
 /* Header links */
@@ -18,34 +41,62 @@
     gap: 12px;
 }
 .header__link-start {
-    padding: 12px 24px;
-    display: flex;
-    gap: 8px;
-    border-radius: 16px;
+    max-width: 224px;
 }
-.header__link-live {
-    padding: 12px 20px;
+
+/* About links */
+
+.about__links {
     display: flex;
-    gap: 8px;
+    gap: 12px;
+}
+.about__link-contact {
+    max-width: 177px;
 }
 
 /* Overall styles*/
 
 .accent-link{
-    background-color: var(--ui-accent-color);
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
     color: var(--light-link-color);
+    background-color: var(--ui-accent-color);
+    border-radius: 16px;
+    
     transition: all 0.1s ease-in;
-
     &:hover{
         background-color: var(--ui-accent-hover-color);
     }
 }
 .muted-link{
-    color: var(--muted-link-color);
-    border-radius: 8px;
-    transition: all 0.1s ease-in;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    width: 160px;
 
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--muted-link-color);
+    background-color: transparent;
+    border-radius: 8px;
+
+    transition: all 0.1s ease-in;
     &:hover{
         background-color: var(--ui-muted-color);
     }
+}
+.start__icon{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.live__icon{
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
 }
