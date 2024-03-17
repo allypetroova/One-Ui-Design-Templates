@@ -28,9 +28,6 @@ Variables
 Global Styles
 ===============
 */
-.none{
-    display: none;
-}
 body{
     font-family: var(--font-main);
     background-color: #000000;
@@ -132,30 +129,31 @@ body{
     text-wrap: balance;
     color: var(--title-color);
 }
-.text {
+.header__text{
     margin-bottom: 48px;
+}
+.text {
     max-width: 611px;
     font-size: 18px;
     font-weight: 300;
     line-height: 160%;
     color: var(--text-color);
 }
-
 /*
 ===============
 Services Section
 ===============
 */
-
 .services {
     padding-bottom: 240px;
 }
 .services__top {
-    margin-bottom: 48px;
+    
     text-align: center;
 }
 .services__text{
     margin: 0 auto;
+    margin-bottom: 48px;
 }
 .services__title {
     margin-bottom: 24px;
@@ -224,7 +222,6 @@ Services Section
 .services__card--6 {
     background-image: url("../images/icons/services__card--6.svg");
 }
-
 /*
 ===============
 About Section
@@ -240,12 +237,17 @@ About Section
 .about__content {
     margin-right: 72px;
     flex-basis: 616px;
-
+    text-align: start;
+}
+.about__top{
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-    text-align: start;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #525252;
+}
+.about__bottom{
+    padding-top: 24px;
 }
 .about__title {
     font-size: 60px;
@@ -258,6 +260,7 @@ About Section
     color: var(--text-color);
 }
 .about__note {
+    margin-bottom: 24px;
     font-size: 16px;
     color: var(--text-color);
 }
@@ -310,54 +313,44 @@ About Section
     flex-basis: 616px;
     object-fit: cover;
 }
-
 /*
 ===============
 Reach Section
 ===============
 */
-
-/*.reach {
+.reach{
     padding: 120px 0;
-    background: url(../images/ellipse-1.png) no-repeat top 106px left 0,
-                url(../images/ellipse-2.png) no-repeat top 485px right -48px,
-                url(../images/ellipse-3.png) no-repeat top 172px right 0;
+    
+    background: url(../images/ellipse-1.png) no-repeat bottom 0 left 0,
+                url(../images/ellipse-2.png) no-repeat bottom 0 right -48px,
+                url(../images/ellipse-3.png) no-repeat bottom 0 right 0;      
+    background-size: auto;
     background-color: #171717;
+    
 }
-
-.reach__content{
+.reach__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
-
 .reach__title {
-    margin: 0 auto;
     margin-bottom: 24px;
-    max-width: 850px;
     font-size: 61px;
     font-weight: 700;
     line-height: 140%;
+    color: var(--title-color);
+    text-wrap: balance;
 }
-
 .reach__text {
     margin: 0 auto;
     margin-bottom: 48px;
-    max-width: 612px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 160%;
 }
-
-.reach__btn{
-    display: flex;
-    justify-content: center;
-}*/
-
 /*
 ===============
 Footer
 ===============
 */
-
 .footer {
     padding-top: 60px;
 }
