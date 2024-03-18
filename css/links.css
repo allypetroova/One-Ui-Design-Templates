@@ -3,6 +3,11 @@
 Links styles
 ===============
 */
+.admission{
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
 .admission__login {
     margin: 0 10px 0 0;
     padding: 8px 16px;
@@ -36,6 +41,11 @@ Links styles
     margin-bottom: 48px;
     display: flex;
     gap: 12px;
+
+    @media (max-width: 540px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* About links */
@@ -43,6 +53,16 @@ Links styles
 .about__links {
     display: flex;
     gap: 12px;
+}
+
+/* Novigation btn */
+
+.nav__btn{
+    display: none;
+    
+    @media (max-width: 990px) {
+        display: block;
+    }
 }
 
 /* Overall styles*/
