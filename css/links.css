@@ -3,11 +3,6 @@
 Links styles
 ===============
 */
-.admission{
-    @media (max-width: 990px) {
-        display: none;
-    }
-}
 .admission__login {
     margin: 0 10px 0 0;
     padding: 8px 16px;
@@ -16,8 +11,8 @@ Links styles
     color: var(--muted-link-color);
     background-color: transparent;
     border-radius: 8px;
-
     transition: all 0.1s ease-in;
+
     &:hover{
         background-color: var(--ui-muted-color);
     }
@@ -28,34 +23,23 @@ Links styles
     color: var(--light-link-color);
     background-color: var(--ui-accent-color);
     border-radius: 8px;
-
     transition: all 0.1s ease-in;
+    
     &:hover{
         background-color: var(--ui-accent-hover-color);
     }
-}.header__links {
+}
+.header__links {
     margin-bottom: 48px;
     display: flex;
     align-items: center;
-
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
 }
 .about__links {
     display: flex;
     align-items: center;
-
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
 }
 .nav__btn{
     display: none;
-    
-    @media (max-width: 990px) {
-        display: block;
-    }
 }
 .reach .accent-link{
     margin: 0;
@@ -72,17 +56,14 @@ Links styles
     font-size: 18px;
     line-height: 30px;
     font-weight: 500;
+
     color: var(--light-link-color);
     background-color: var(--ui-accent-color);
     border-radius: 16px;
-    
     transition: all 0.1s ease-in;
+
     &:hover{
         background-color: var(--ui-accent-hover-color);
-    }
-
-    @media (max-width: 540px) {
-        margin: 0 0 12px 0;
     }
 }
 .muted-link{
@@ -92,11 +73,12 @@ Links styles
 
     font-size: 16px;
     line-height: 24px;
+
     color: var(--muted-link-color);
     background-color: transparent;
     border-radius: 8px;
-
     transition: all 0.1s ease-in;
+
     &:hover{
         background-color: var(--ui-muted-color);
     }
