@@ -361,10 +361,7 @@ Footer
 .footer__grid {
     margin-bottom: 80px;
     display: grid;
-    grid-template-columns:  677px 200px 200px 200px;
-}
-.footer__desc{
-    margin: 0 75px 0 0;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
 }
 .footer__logo {
     margin-bottom: 24px;
@@ -373,11 +370,18 @@ Footer
 }
 .footer__title {
     max-width: 416px;
+    text-align: start;
     font-size: 24px;
     font-weight: 600;
     line-height: 115%;
-    text-align: start;
     color: var(--title-color);
+}
+.footer__nav{
+    max-width: 100%;
+    width: 200px;
+}
+.footer__nav--platform{
+    grid-column-start: 3;
 }
 .footer__nav-title {
     margin-bottom: 24px;
