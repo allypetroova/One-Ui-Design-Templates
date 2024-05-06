@@ -37,6 +37,11 @@
     .footer__nav--platform{
         grid-column-start: auto;
     }
+    .footer__row{
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+    }
 }
 
 @media (max-width: 620px) {
@@ -64,9 +69,13 @@
         margin-bottom: 12px;
     }
     .footer__grid{
+        margin-bottom: 60px;
         display: flex;
         flex-direction: column;
         gap: 32px;
+    }
+    .footer__links{
+        flex-direction: column;
     }
 }
 
