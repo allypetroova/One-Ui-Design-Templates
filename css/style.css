@@ -27,7 +27,7 @@ Variables
 }
 /*
 ===============
-Global Styles
+Index.html
 ===============
 */
 .none {
@@ -421,4 +421,15 @@ Footer
         background-color: #172554;
         border-bottom: 2px solid #2563EB;
     }
+}
+
+
+/*
+===============
+Contact.html
+===============
+*/
+
+.form{
+    color: #FAFAFA;
 }

@@ -116,9 +116,8 @@
     <main class="main">
 
         <!-- Contact -->
-        <div class="contact">
+        <section class="contact">
             <div class="container">
-
                 <div class="contact__content">
                     <h2 class="contact__title">Contact Us</h2>
                     <p class="contact__text text">
@@ -146,13 +145,54 @@
                     </ul>
                 </div>
 
-                <div class="contact__form"></div>
+                <form class="form">
+                  <!-- name -->
+                  <div class="form__input-wrapper">
+                    <label class="form__label" for="name">Your name</label>
+                    <input class="form__input" type="text" id="name" placeholder="John Doe">
+                  </div>
 
+                  <!-- company -->
+                  <div class="form__input-wrapper">
+                    <label class="form__label" for="company">Your Company</label>
+                    <input class="form__input" type="text" id="company" placeholder="ITGiga Consulting PVT LTD.">
+                  </div>
+
+                  <!-- calendar -->
+                  <div class="form__input-wrapper form__input-calendar">
+                    <input class="form__input" type="text" id="date" placeholder="Select Date of Appointment">
+                  </div>
+
+                  <!-- details -->
+                  <div class="form__input-wrapper">
+                    <label class="form__label">Details of Project</label>
+                    <input class="form__input" type="text" placeholder="Enter Details">
+                  </div>
+
+                  <!-- expert -->
+                  <div class="form__checkbox">
+                    <input class="form__checkbox-input checkbox__circle" name="expert" type="checkbox" id="expert">
+                    <label class="form__checkbox-label" for="expert">Expert Consultation</label>
+                    <label class="label__small" for="expert">Need to Discuss Project Before Starting</label>
+                  </div>
+
+                  <!-- terms -->
+                  <div class="form__checkbox">
+                    <input class="form__checkbox-input checkbox__box" name="terms" type="checkbox" id="terms" checked>
+                    <label class="form__checkbox-label" for="terms">
+                      <a class="form__checkbox-link" href="#yyy" target="_blank">Do&nbsp;you agree with our terms &amp;&nbsp;conditions underlined in&nbsp;T&amp;C&nbsp;Page.</a>
+                    </label>
+                  </div>
+                </form>
             </div>
-        </div>
+        </section>
         
         <!-- Map -->
-        <div class="map"></div>
+        <div class="map">
+          <div class="container">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1754.4792349156971!2d-0.11889395859411056!3d51.546078811615104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b12ad3c1e25%3A0x9e8614a0c284d4a7!2zQ2FycmljayBIb3VzZSwgQ2FsZWRvbmlhbiBSZCwgTG9uZG9uIE43IDhURywg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1715166733931!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
 
     </main>
     
