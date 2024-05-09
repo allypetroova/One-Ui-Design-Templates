@@ -433,3 +433,77 @@ Contact.html
 .form{
     color: #FAFAFA;
 }
+
+
+.contact {
+    padding: 120px 0;
+}
+.contact__wrapper{
+    display: flex;
+    gap: 48px;
+}
+.contact__content {
+}
+.contact__title {
+    margin-bottom: 24px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--title-color);
+}
+.contact__text {
+    margin-bottom: 72px;
+}
+.contact__socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.contact__socials-item {
+}
+.contact__socials-link {
+}
+.form {
+    padding: 36px;
+    background-color: #0A0A0A;
+    border-radius: 8px;
+}
+.form__input-wrapper {
+}
+.form__label {
+}
+.form__input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #525252;
+    border-radius: 8px;
+}
+.form__input-calendar {
+}
+.form__checkbox {
+}
+.form__checkbox-input {
+}
+.checkbox__circle {
+}
+.form__checkbox-label {
+}
+.label__small {
+}
+.checkbox__box {
+}
+.form__checkbox-link {
+}
+/*
+===============
+Map Section
+===============
+*/
+.map {
+    /*position: relative;*/
+}
+.map__iframe {
+    height: 100%;
+    width: 100%;
+    /*position: absolute;*/
+}
