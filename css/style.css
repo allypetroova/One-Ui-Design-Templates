@@ -435,12 +435,19 @@ Contact.html
 }
 
 
+.header__small{
+    padding: 21px 0 21px;
+}
+.nav__contact{
+    margin-bottom: 0;
+}
 .contact {
     padding: 120px 0;
 }
 .contact__wrapper{
     display: flex;
     gap: 48px;
+    align-items: start;
 }
 .contact__content {
 }
@@ -465,12 +472,16 @@ Contact.html
 }
 .form {
     padding: 36px;
+    display: grid;
+    gap: 36px;
+    
     background-color: #0A0A0A;
     border-radius: 8px;
 }
 .form__input-wrapper {
 }
 .form__label {
+    margin-bottom: 4px;
 }
 .form__input {
     width: 100%;
@@ -479,6 +490,9 @@ Contact.html
     border-radius: 8px;
 }
 .form__input-calendar {
+    background-image: url('../images/icons/form__calendar.svg');
+    background-position: left;
+    background-repeat: no-repeat;
 }
 .form__checkbox {
 }
@@ -500,10 +514,13 @@ Map Section
 ===============
 */
 .map {
-    /*position: relative;*/
+    padding-bottom: 500px;
+    position: relative;
 }
 .map__iframe {
     height: 100%;
     width: 100%;
-    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    position: absolute;
 }
