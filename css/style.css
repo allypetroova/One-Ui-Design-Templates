@@ -7,6 +7,7 @@ Fonts and styles
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import "links.css";
 @import "mobile.css";
+@import "checkboxes.css";
 /*
 ===============
 Variables
@@ -22,6 +23,14 @@ Variables
 
     --light-link-color: #FAFAFA;
     --muted-link-color: #D4D4D4;
+
+    --checkbox-surface-subtle: #172554;
+    --checkbox-surface-medium: #60A5FA;
+    --checkbox-surface-default: #3B82F6;
+
+    --checkbox-border-subtle: #BFDBFE;
+
+    --checkbox-surface-checked: #0B63F3;
 
     --font-main: 'Poppins', sans-serif;
 }
@@ -496,15 +505,9 @@ Contact.html
 }
 .form__checkbox {
 }
-.form__checkbox-input {
-}
-.checkbox__circle {
-}
 .form__checkbox-label {
 }
 .label__small {
-}
-.checkbox__box {
 }
 .form__checkbox-link {
 }
