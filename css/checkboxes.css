@@ -24,7 +24,7 @@ Checkboxes
     height: 20px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 2px solid #2563EB;
+    border: 2px solid var(--checkbox-surface-default);
     background-color: var(--checkbox-surface-subtle);
     margin-right: 12px;
     background-repeat: no-repeat;
@@ -43,14 +43,8 @@ Checkboxes
     background-image: url('../images/icons/checkbox__circle.svg');
 }
 .checkbox__box:checked+label::before{
-    background-color: var(--checkbox-surface-checked);
+    background-color: var(--checkbox-surface-default);
     background-image: url('../images/icons/checkbox__box.svg');
-}
-
-/* styles for a checkbox in the hover state and not checked */
-.form__checkbox-input:not(:disabled):not(:checked)+label:hover::before{
-    border: 2px solid var(--checkbox-surface-medium);
-    /*background-color: #EFF6FF;*/
 }
 
 /* styles for a checkbox in the hover state */
@@ -60,40 +54,51 @@ Checkboxes
 }
 .checkbox__circle:checked+label:hover::before{
     border: 2px solid var(--checkbox-surface-medium);
-    /*background-color: #FAFAFA;*/
     background-image: url('../images/icons/checkbox__circle-hover.svg');
+}
+
+/* styles for a checkbox in the hover state and not checked */
+.form__checkbox-input:not(:disabled):not(:checked)+label:hover::before{
+    border: 2px solid var(--checkbox-surface-medium);
 }
 
 /* styles for a checkbox in the focus */
 .checkbox__circle:focus+label::before{
     outline: 1,5px solid var(--checkbox-border-subtle);
-    /*background-color: #FAFAFA;*/
 }
 .checkbox__box:focus+label::before{
     outline: 2,5px solid var(--checkbox-border-subtle);
     background-color: var(--checkbox-surface-default);
+    background-image: url('../images/icons/checkbox__box.svg');
 }
 
 /* styles for a checkbox in the focus state and not in the checked state */
 .form__checkbox-input:focus:not(:checked)+label::before{
-    /*background-color: #EFF6FF;*/
+    border: 2px solid var(--checkbox-border-default);
 }
 .checkbox__circle:focus:not(:checked)+label::before{
     outline: 1.5px solid var(--checkbox-border-subtle);
+    background-image: url('../images/icons/checkbox__circle.svg');
 }
 .checkbox__box:focus:not(:checked)+label::before{
     outline: 2.5px solid var(--checkbox-border-subtle);
 }
 
 /* styles for a checkbox in the disabled state */
-.form__checkbox-input:disabled+label::before{
-    background-color: #F5F5F5;
-}
 .checkbox__circle:disabled+label::before{
-    border: 2px solid #E5E5E5;
+    border: 2px solid var(--checkbox-border-disabled);
     background-image: url('../images/icons/checkbox__circle-disabled.svg');
 }
 .checkbox__box:disabled+label::before{
-    border: 2px solid #F5F5F5;
+    border: 2px solid var(--checkbox-base-disabled);
+    background-color: var(--checkbox-base-disabled);
     background-image: url('../images/icons/checkbox__box-disabled.svg');
+}
+
+/* styles for a checkbox in the disabled state and not in the checked state */
+.checkbox__circle:disabled:not(:checked)+label::before{
+    border: 2px solid var(--checkbox-border-disabled);
+}
+.checkbox__box:disabled:not(:checked)+label::before{
+    border: 2px solid var(--checkbox-base-disabled);
 }
