@@ -16,15 +16,19 @@ Variables
 :root{
     --text-color: #D4D4D4;
     --title-color: #FAFAFA;
-
+    
     --ui-accent-color: #3B82F6;
     --ui-accent-hover-color: #0B57DB;
     --ui-muted-color: #171717;
+    
+    --light-link-color: #FAFAFA;
+    --muted-link-color: #D4D4D4;
 
     --form-base-color:#0A0A0A;
 
-    --light-link-color: #FAFAFA;
-    --muted-link-color: #D4D4D4;
+    --form-base-input-color: #525252;
+    --form-label-color: #E5E5E5;
+    --form-input-color: #737373;
 
     --checkbox-surface-subtle: #172554;
     --checkbox-surface-medium: #60A5FA;
@@ -434,8 +438,6 @@ Contact.html
     gap: 48px;
     align-items: start;
 }
-.contact__content {
-}
 .contact__title {
     margin-bottom: 24px;
     font-size: 60px;
@@ -451,10 +453,6 @@ Contact.html
     gap: 12px;
     align-items: center;
 }
-.contact__socials-item {
-}
-.contact__socials-link {
-}
 .form {
     padding: 36px;
     display: grid;
@@ -464,15 +462,24 @@ Contact.html
     border-radius: 8px;
 }
 .form__input-wrapper {
+    display: grid;
+
+    font-size: 14px;
 }
 .form__label {
     margin-bottom: 4px;
+    color: var(--form-label-color);
 }
 .form__input {
-    width: 100%;
     padding: 12px;
-    border: 1px solid #525252;
+    border: 1px solid var(--form-base-input-color);
     border-radius: 8px;
+    color: var(--form-input-color);
+}
+.form__calendar{
+    background-image: url('../images/icons/form__calendar-arrow.svg');
+    background-position: right 12px top 15px;
+    background-repeat: no-repeat;
 }
 .form__input-calendar {
     padding-left: 40px;
@@ -485,12 +492,18 @@ Contact.html
     max-height: 96px;
 }
 .form__checkbox {
+    display: grid;
+    color: var(--form-label-color);
 }
 .form__checkbox-label {
+    font-size: 14px;
 }
-.label__small {
+.form__label-small {
+    padding-left: 32px;
+    font-size: 12px;
 }
 .form__checkbox-link {
+    color: var(--muted-link-color);
 }
 
 /* -----------Map Section----------- */
