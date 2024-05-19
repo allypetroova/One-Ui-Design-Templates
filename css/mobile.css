@@ -11,7 +11,7 @@ Mobile navigation
     bottom: 0;
     width: 260px;
     padding: 40px 40px;
-    background-color: var(--ui-muted-color);
+    background-color: var(--ui-muted-surface);
 
     @media (max-width: 460px) {
         width: 100%;
@@ -33,11 +33,11 @@ Mobile navigation
 }
 .mobile-nav-link {
     padding: 8px;
-    color: var(--muted-link-color);
+    color: var(--muted-link);
 
     &:active{
-        background-color: #172554;
-        border-bottom: 2px solid #2563EB;
+        background-color: var(--ui-accent-surface-subtle);
+        border-bottom: 2px solid var(--ui-accent-border-default);
     }
 }
 
@@ -52,9 +52,9 @@ Mobile navigation
 }
 .mobile-sub-nav__link {
     padding: 4px;
-    color: var(--muted-link-color);
+    color: var(--muted-link);
     
     &:active{
-        background-color: var(--ui-accent-hover-color);
+        background-color: var(--ui-accent-surface);
     }
 }

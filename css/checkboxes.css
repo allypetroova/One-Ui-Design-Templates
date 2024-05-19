@@ -24,7 +24,7 @@ Checkboxes
     height: 20px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 2px solid var(--ui-accent-surface-default);
+    border: 2px solid var(--ui-accent-surface);
     background-color: var(--ui-accent-surface-subtle);
     margin-right: 12px;
     background-repeat: no-repeat;
@@ -43,23 +43,23 @@ Checkboxes
     background-image: url('../images/icons/checkbox__circle.svg');
 }
 .checkbox__box:checked+label::before{
-    background-color: var(--ui-accent-surface-default);
+    background-color: var(--ui-accent-surface);
     background-image: url('../images/icons/checkbox__box.svg');
 }
 
 /* styles for a checkbox in the hover state */
 .checkbox__box:checked+label:hover::before{
-    background-color: var(--ui-accent-surface-medium);
-    border: 2px solid var(--ui-accent-surface-medium);
+    background-color: var(--ui-accent-surface-pressed);
+    border: 2px solid var(--ui-accent-surface-pressed);
 }
 .checkbox__circle:checked+label:hover::before{
-    border: 2px solid var(--ui-accent-surface-medium);
+    border: 2px solid var(--ui-accent-surface-pressed);
     background-image: url('../images/icons/checkbox__circle-hover.svg');
 }
 
 /* styles for a checkbox in the hover state and not checked */
 .form__checkbox-input:not(:disabled):not(:checked)+label:hover::before{
-    border: 2px solid var(--ui-accent-surface-medium);
+    border: 2px solid var(--ui-accent-surface-pressed);
 }
 
 /* styles for a checkbox in the focus */
@@ -68,7 +68,7 @@ Checkboxes
 }
 .checkbox__box:focus+label::before{
     outline: 2,5px solid var(--ui-accent-border-subtle);
-    background-color: var(--ui-accent-surface-default);
+    background-color: var(--ui-accent-surface);
     background-image: url('../images/icons/checkbox__box.svg');
 }
 
@@ -86,7 +86,7 @@ Checkboxes
 
 /* styles for a checkbox in the disabled state */
 .checkbox__circle:disabled+label::before{
-    border: 2px solid var(--ui-accent-border-disabled);
+    border: 2px solid var(--ui-muted-base-subtle);
     background-image: url('../images/icons/checkbox__circle-disabled.svg');
 }
 .checkbox__box:disabled+label::before{
@@ -97,7 +97,7 @@ Checkboxes
 
 /* styles for a checkbox in the disabled state and not in the checked state */
 .checkbox__circle:disabled:not(:checked)+label::before{
-    border: 2px solid var(--ui-accent-border-disabled);
+    border: 2px solid var(--ui-muted-base-subtle);
 }
 .checkbox__box:disabled:not(:checked)+label::before{
     border: 2px solid var(--ui-accent-base-disabled);
